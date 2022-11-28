@@ -1,0 +1,22 @@
+<section id="tables">
+  <figure>
+    <table role="grid">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i < todos.length; i++) { %>
+        <tr>
+          <th scope="row"><%= i+1 %></th>
+          <td><a href="/todo/<%= todos[i].id %>"><%= todos[i].id %></a></td>
+          <td><%= todos[i].title %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </figure>
+</section>

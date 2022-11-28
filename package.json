@@ -1,0 +1,12 @@
+{
+  "name": "statikly-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon -e js -e ejs  --exec \"statikly serve\""
+  },
+  "keywords": [],
+  "author": "Nir Adler",
+  "license": "ISC"
+}
