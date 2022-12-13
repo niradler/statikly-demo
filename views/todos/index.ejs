@@ -1,0 +1,7 @@
+<article id="article">
+  <h2>TODOs</h2>
+  <%- include(fromRoot('./partials/create.ejs'),{errors:data.errors}) %>
+  <footer>
+    <%- include(fromRoot('./partials/todos.ejs'),{todos:data.todos}) %>
+  </footer>
+</article>

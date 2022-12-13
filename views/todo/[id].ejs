@@ -1,0 +1,9 @@
+<article id="article">
+  <h2>TODO</h2>
+  <%= data.title; %>
+  <form method="post" action="/api/todos/<%= data.id; %>">
+    <input type="hidden" value="delete" name="_method_" />
+    <button type="submit">Delete</button>
+  </form>
+  <footer>/todo/<%= data.id; %></footer>
+</article>
