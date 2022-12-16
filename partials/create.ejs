@@ -5,9 +5,16 @@
   <% } %>
 </ul>
 <% } %>
+<form method="post">
+  <div class="grid">
+    <input type="text" required placeholder="My awesome todo" name="title" />
+    <input type="hidden" name="_csrf" value="<%= csrf %>" />
+    <button type="submit">Create</button>
+  </div>
+</form>
 <form method="post" action="/api/todos">
   <div class="grid">
     <input type="text" required placeholder="My awesome todo" name="title" />
-    <button type="submit">Create</button>
+    <button type="submit">Create API</button>
   </div>
 </form>

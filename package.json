@@ -10,10 +10,10 @@
   "keywords": [],
   "author": "Nir Adler",
   "license": "ISC",
-  "dependencies": {
-    "statikly": "^0.0.11"
-  },
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "statikly": "^0.0.13"
   }
 }

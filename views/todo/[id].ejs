@@ -1,9 +1,15 @@
 <article id="article">
-  <h2>TODO</h2>
-  <%= data.title; %>
-  <form method="post" action="/api/todos/<%= data.id; %>">
-    <input type="hidden" value="delete" name="_method_" />
-    <button type="submit">Delete</button>
-  </form>
-  <footer>/todo/<%= data.id; %></footer>
+    <h2>TODO</h2>
+    <div class="grid">
+        <p><%= data.title; %></p>
+        <form method="post">
+            <input type="hidden" value="<%= csrf %>" name="_csrf" />
+            <button type="submit">Delete</button>
+        </form>
+        <form method="post" action="/api/todos/<%= data.id; %>">
+            <input type="hidden" value="delete" name="_method" />
+            <button type="submit">Delete API</button>
+        </form>
+    </div>
+    <footer>/todo/<%= data.id; %></footer>
 </article>
