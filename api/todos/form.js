@@ -1,12 +1,5 @@
 const db = require('../../src/db')
 module.exports = {
-    get: {
-        handler: async (req, reply) => {
-            const todos = await db.all();
-
-            return todos;
-        }
-    },
     post: {
         handler: async (req, reply) => {
             const title = req.body.title;
@@ -15,8 +8,7 @@ module.exports = {
                 return reply.redirect('/todos');
             }
             await db.add(title)
-
-            return { status: "success" };
+            reply.redirect('/todos');
         }
     }
 }

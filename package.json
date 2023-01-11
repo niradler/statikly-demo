@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon -e js,ejs --exec \"statikly serve -v\"",
+    "watch": "nodemon -e js,ejs --exec \"statikly serve --optionsFile statikly.json --context context.json -v\"",
     "serve": "statikly serve"
   },
   "keywords": [],
